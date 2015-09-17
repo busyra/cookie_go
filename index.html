@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Cookie Go!</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+
+	<meta name="title" content="VGDB: The Video Game Database">
+	<meta name="description" content="VGDB. The Video Game Database. Play Your Games. Love Your Games.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<base href="/">
+</head>
+<body ng-cloak ng-controller="HeaderCtrl">
+	<header>
+		<div>
+			<ul>
+				<li><a href="/#/browse">Browse Varieties</a></li>
+			</ul>
+		</div>
+		<a href="/#/" style="width: 100px; margin-top: auto; margin-bottom: auto;">
+			<img class="vgdb-logo" src="images/logo.png" alt="VGDB Logo" width="100">
+		</a>
+		<div>
+			<!--<ul ng-if="! authenticated">
+				<li><a href="/#/login">Login</a></li><li><a href="/#/signup">Sign Up</a></li>
+			</ul>-->
+		</div>
+	</header>
+	<section>
+
+		<notifications-bar class="notifications" closeIcon="fa fa-times-circle"></notifications-bar>
+
+		<div class="container" ng-view></div>
+
+	</section>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="/#/about">About</a></li>
+			</ul>
+
+			<ul>
+				<li>Copyright © 2015 Cookie Go!</li><!-- Remove Whitespace between <li> elements
+				--><li><a href="/#/terms" ng-click="show_terms()">Terms of Use</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script data-main="js/main" src="js/vendor/requirejs/require.js"></script>
+</body>
+</html>

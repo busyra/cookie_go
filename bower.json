@@ -1,0 +1,18 @@
+{
+  "name": "VGDB Website",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-deckgrid": "~0.5.0",
+    "angular-jwt": "~0.0.9",
+    "angular-locker": "~2.0.2",
+    "angular-resource": null,
+    "angular-route": null,
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "ng-notifications-bar": "~0.0.15",
+    "ngSweetAlert": "angular-sweetalert#~1.1.0",
+    "requirejs": "~2.1.20",
+    "requirejs-domready": null
+  }
+}

@@ -1,0 +1,40 @@
+<div class="title-subtitle">
+	<p>Available Cookies:</p>
+</div>
+
+
+<table class="table">
+	<tbody>
+		<tr ng-repeat="cookie in cookies">
+			<td style="width: 120px;">
+				<div class="square-thumbnail">
+					<img ng-src="{{cookie.thumbnailUrl}}">
+				</div>
+			</td>
+			<td>
+				<h1>Title: {{cookie.name}}</h1>
+				<p>A delicious cookie that kicks ass.</p>
+			</td>
+			<td style="width: 210px; vertical-align: middle;">
+				<a href="#" class="btn-danger">Get Emergency Cookie!</a>
+			</td>
+			<td style="width: 100px; vertical-align: middle;">
+				<a href="/#/subscribe/{{cookie.id}}" class="btn-info">Subscribe</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<!--<div deckgrid class="deckgrid clearfix" source="searchResults.data">
+	<a class="game" href="/#/game/{{card.id}}">
+		<img ng-src="{{card.thumbnailUrl}}">
+		
+		<div>
+			<strong>{{card.title}}</strong> for {{card.system_abbreviation}}
+			<br>({{card.publisher}}, {{card.year}})
+		</div>
+
+	</a>
+</div>-->
